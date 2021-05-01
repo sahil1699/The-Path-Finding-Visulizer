@@ -38,23 +38,28 @@ class Button():
 # algo buttons 
 
 buttonPos_x =  WIDTH - BUTTON_WIDTH - 10
-buttonPos_y = 10
+algo_buttonPos_y = 30
 
-BfsButton = Button(GREEN ,  buttonPos_x  , buttonPos_y , BUTTON_WIDTH, BUTTON_HEIGHT , BREATH_FIRST_SEARCH ) #creates a button
-
-DfsButton = Button(GREEN , buttonPos_x , buttonPos_y + BUTTON_HEIGHT + 10 , BUTTON_WIDTH , BUTTON_HEIGHT , DEPTH_FIRST_SEARCH )
-
-AStarButton = Button(GREEN , buttonPos_x , buttonPos_y + 2 * ( BUTTON_HEIGHT + 10) , BUTTON_WIDTH , BUTTON_HEIGHT , A_STAR )
-
-#speed buttons
-speed_button_pos_y = GRID_HEIGHT + 20
-
-FastButton = Button(RED ,  20  , speed_button_pos_y  , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Fast" ) 
-MediumButton = Button(GREEN ,  20  , speed_button_pos_y  + BUTTON_HEIGHT , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Medium" ) 
-SlowButton = Button(GREEN, 20  , speed_button_pos_y + 2 * BUTTON_HEIGHT , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Slow" ) 
+BfsButton = Button(GREEN ,  buttonPos_x  , algo_buttonPos_y , BUTTON_WIDTH, BUTTON_HEIGHT , BREATH_FIRST_SEARCH ) 
+DfsButton = Button(GREEN , buttonPos_x , algo_buttonPos_y + BUTTON_HEIGHT + 10 , BUTTON_WIDTH , BUTTON_HEIGHT , DEPTH_FIRST_SEARCH )
+AStarButton = Button(GREEN , buttonPos_x , algo_buttonPos_y + 2 * ( BUTTON_HEIGHT + 10) , BUTTON_WIDTH , BUTTON_HEIGHT , A_STAR )
 
 
 ##reset button
-buttonPos_reset_y = HEIGHT - BUTTON_HEIGHT -10
+reset_buttonPos_y = HEIGHT - BUTTON_HEIGHT - 30
 
-ResetButton = Button(GREEN, buttonPos_x, buttonPos_reset_y, BUTTON_WIDTH , BUTTON_HEIGHT, "Reset and Stop"  )
+ResetButton = Button(GREEN, buttonPos_x, reset_buttonPos_y, BUTTON_WIDTH , BUTTON_HEIGHT, "Reset and Stop"  )
+
+#Maze buttons
+Maze_buttonPos_y = reset_buttonPos_y - BUTTON_HEIGHT - 100
+
+RandomMazeButton = Button(GREEN ,  buttonPos_x  , Maze_buttonPos_y , BUTTON_WIDTH, BUTTON_HEIGHT , "Random Maze") 
+VerticalMazeButton = Button(GREEN ,  buttonPos_x  , Maze_buttonPos_y - BUTTON_HEIGHT - 10 , BUTTON_WIDTH, BUTTON_HEIGHT , "Vertical Maze") 
+HorizentalMazeButton = Button(GREEN ,  buttonPos_x  , Maze_buttonPos_y - 2 * (  BUTTON_HEIGHT +  10)   , BUTTON_WIDTH, BUTTON_HEIGHT , "Horizental Maze") 
+
+#speed buttons
+speed_buttonPos_y = GRID_HEIGHT + 20
+
+FastButton = Button(RED ,  20  , speed_buttonPos_y  , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Fast Speed" ) 
+MediumButton = Button(GREEN ,  20  , speed_buttonPos_y  + BUTTON_HEIGHT , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Medium Speed" ) 
+SlowButton = Button(GREEN, 20  , speed_buttonPos_y + 2 * BUTTON_HEIGHT , BUTTON_WIDTH -20  , BUTTON_HEIGHT - 20, "Slow Speed" ) 

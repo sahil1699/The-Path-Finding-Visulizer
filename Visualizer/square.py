@@ -1,6 +1,6 @@
 import pygame
 
-from .constants import GAP,GRID_HEIGHT,GRID_WIDTH,RED,GREEN,BLACK,WIN,OTHER_SQUARE,START_SQUARE,END_SQUARE
+from .constants import GAP,GRID_HEIGHT,GRID_WIDTH,RED,GREEN,BLACK,WIN,OTHER_SQUARE,START_SQUARE,END_SQUARE,BROWN
 
 
 class Square:
@@ -14,12 +14,17 @@ class Square:
         self.col = self.y//GAP
         self.square_type = square_type
 
-    def draw(self):
+    def draw(self, outline = False):
         
             if self.square_type != START_SQUARE and self.square_type != END_SQUARE and start_square.x == self.x and start_square.y == self.y:
                 pass
             else:
+                if outline:
+                    pygame.draw.rect(self.surface,BROWN,(self.x ,self.y ,GAP + 1 ,GAP + 1 ))
+
                 pygame.draw.rect(self.surface,self.color,(self.x + 1,self.y + 1,GAP -1 ,GAP -1 ))
+                
+
     
 
     def collidepoint(self,pos):

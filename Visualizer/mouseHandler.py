@@ -6,7 +6,7 @@ from .constants import START, END ,WALL , GAP , GRID_ROWS, GRID_COLS , GRID_HEIG
 
 from .graph import graph
 
-from .createButton import BfsButton, ResetButton, DfsButton ,FastButton, SlowButton , MediumButton,AStarButton
+from .createButton import BfsButton, ResetButton, DfsButton ,FastButton, SlowButton , MediumButton,AStarButton, RandomMazeButton, VerticalMazeButton, HorizentalMazeButton
 
 from Visualizer.Algorithmes.breathFirstSearch import breathFirstSearch
 from Visualizer.Algorithmes.depthFirstSearch import depthFirstSearch
@@ -150,8 +150,18 @@ class MouseHandler:
             self.currAlgo = aStar
             aStar.stop = False
             aStar.run(self)
+        
+        #mazeButtons
+        elif (self.buttonclick(RandomMazeButton, pos , event)):
+            if (self.currAlgo) : self.currAlgo.reset()
+            graph.drawRandomMaze()
+        elif (self.buttonclick(VerticalMazeButton, pos, event)):
+            if (self.currAlgo) : self.currAlgo.reset()
+            graph.drawVerticalMaze()
+        elif (self.buttonclick(HorizentalMazeButton, pos , event)):
+            if (self.currAlgo) : self.currAlgo.reset()
+            graph.drawHorizentalMaze()
             
-
         return self.currAlgo
 
         

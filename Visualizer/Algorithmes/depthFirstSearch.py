@@ -63,7 +63,7 @@ class DepthFirstSearch:
                 self.privious[(newSquare.x, newSquare.y )] = (curr_square.x , curr_square.y)
 
                 redrawwindow.draw(self)
-
+                
                 self.recursiveDFS(directions, newSquare , mouseHandler)
 
         return
