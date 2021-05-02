@@ -1,10 +1,14 @@
 import pygame
 
-from .constants import KHAKI, GRID_WIDTH, GRID_HEIGHT,GRID_COLS,GRID_ROWS,GAP , ORANGE , WIN, PINK ,BREATH_FIRST_SEARCH, DEPTH_FIRST_SEARCH,YELLOW,BLUE,A_STAR,BLACK
+from .constants import KHAKI, GRID_WIDTH, GRID_HEIGHT,GRID_COLS,GRID_ROWS,GAP , ORANGE , WIN, PINK ,BREATH_FIRST_SEARCH, DEPTH_FIRST_SEARCH,YELLOW,BLUE,A_STAR,BLACK,GREEN,RED
 from .square import start_square, end_square , Square
 from .graph import graph
 
 from .createButton import BfsButton, ResetButton, DfsButton, FastButton, SlowButton, MediumButton, AStarButton, RandomMazeButton,VerticalMazeButton,HorizentalMazeButton
+
+btw = 120
+text_size = 25
+textShift = 10
 
 class Redrawwindow :
 
@@ -58,6 +62,23 @@ class Redrawwindow :
         VerticalMazeButton.draw(self.surface, True)
         HorizentalMazeButton.draw(self.surface, True)
 
+        #strating ending wall Info
+
+        pos_x = GRID_WIDTH - ( GRID_WIDTH//2) - 280 
+
+        pos_y = GRID_HEIGHT + 55
+
+        startingSquare = Square(self.surface, (pos_x  , pos_y) , GREEN )
+        startingSquare.draw(True)
+        self.text("Starting Node" , startingSquare.x + btw , startingSquare.y + textShift , text_size )
+
+        endingSquare = Square(self.surface, (pos_x  , pos_y + GAP + 20  ) , RED )
+        endingSquare.draw(True)
+        self.text("Ending Node" , endingSquare.x + btw , endingSquare.y + textShift , text_size )
+
+        wallSquare = Square(self.surface,  (pos_x , pos_y + 2 * (GAP + 20) )  , BLACK )
+        wallSquare.draw(True)
+        self.text("Wall Nodes" , wallSquare.x + btw , wallSquare.y + textShift , text_size )
 
 
         pygame.display.update()
@@ -130,47 +151,48 @@ class Redrawwindow :
 
     def algoHeading(self , text ):
         
-        x = GRID_WIDTH - (GRID_WIDTH//2)
+        x = GRID_WIDTH - (GRID_WIDTH//2) + 180
 
-        y = GRID_HEIGHT + 20
+        y = GRID_HEIGHT + 30
 
         self.text(text, x, y , 30 )
 
 
     def gernalInstructions(self, blueText, yellowText , pinkText = None):
         
-        btw = 120
-        text_size = 25
-        textShift = 5
+        
 
-        pos_x = GRID_WIDTH - ( GRID_WIDTH//2) - 100 
+        pos_x = GRID_WIDTH - ( GRID_WIDTH//2) - 20
 
-        pos_y = GRID_HEIGHT + 50 
+        pos_y = GRID_HEIGHT + 75 
 
+        #left
         blueSquare = Square(self.surface, (pos_x, pos_y ) , BLUE )
-        blueSquare.draw()
+        blueSquare.draw(True)
         self.text(blueText , blueSquare.x + btw , blueSquare.y+ textShift , text_size )
 
         yellowSquare = Square(self.surface, (pos_x, pos_y + GAP  + 20  ) , YELLOW )
-        yellowSquare.draw()
+        yellowSquare.draw(True)
         self.text(yellowText , yellowSquare.x + btw , yellowSquare.y + textShift , text_size )
-
+        
         if (pinkText):
-            pinkSquare = Square(self.surface, (pos_x , pos_y + 2 * (GAP + 20 )  ) , PINK )
-            pinkSquare.draw()
+            pinkSquare = Square(self.surface, (pos_x , pos_y + 2 * (GAP + 20 ) - 12  ) , PINK )
+            pinkSquare.draw(True)
             self.text(pinkText , pinkSquare.x + btw , pinkSquare.y + textShift , text_size )
 
+        
+       
+        #right
         now_x = pos_x + GAP+ btw + 100
         orangeSquare = Square(self.surface, ( now_x , pos_y ) , ORANGE )
-        orangeSquare.draw()
-        self.text("Shortest Path" , orangeSquare.x + btw , orangeSquare.y + textShift, text_size )
+        orangeSquare.draw(True)
+        self.text("Path Nodes" , orangeSquare.x + btw , orangeSquare.y + textShift, text_size )
         
         kahkiSquare = Square(self.surface, (now_x, pos_y + GAP + 20 ) , KHAKI )
         kahkiSquare.draw(True)
-        self.text("Unvisted Nodes" , kahkiSquare.x + btw , kahkiSquare.y + textShift , text_size )
+        self.text("Unvisited Nodes" , kahkiSquare.x + btw , kahkiSquare.y + textShift , text_size )
 
-
-
+       
     
     def text(self , text , x, y , size ):
         basicfont = pygame.font.SysFont(None, size)
