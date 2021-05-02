@@ -55,6 +55,6 @@ END_SQUARE = "endsqure"
 
 #speeds
 
-FAST = 50
+FAST = 500
 SLOW = 6
 MEDIUM = 12
