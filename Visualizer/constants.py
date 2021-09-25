@@ -39,7 +39,7 @@ END = "end"
 
 BREATH_FIRST_SEARCH = "Breath First Search"
 DEPTH_FIRST_SEARCH = "Depth First Search"
-A_STAR = "A* Search "
+A_STAR = "A* Search"
 
 #button size
 
