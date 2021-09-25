@@ -35,11 +35,12 @@ WALL = "wall"
 START = "start"
 END = "end"
 
-#Algonames 
+#Algo Names
 
 BREATH_FIRST_SEARCH = "Breath First Search"
 DEPTH_FIRST_SEARCH = "Depth First Search"
 A_STAR = "A* Search"
+DOUBLE_BFS = "Double_BFS"
 
 #button size
 
