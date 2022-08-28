@@ -12,7 +12,7 @@ There are 2 nodes starting node(green) and ending node(red) you can darg them to
 ![movenodes](https://user-images.githubusercontent.com/52308072/187064920-46c04ca7-2800-4dc7-8c26-864787f5e194.gif)
 
 ### Drawing the obstacles.
-You can drag on empty part grid to draw the obstacles between the 2 nodes. 
+You can drag on empty part of grid to draw the obstacles between the 2 nodes. 
 
 ![DrawObstecls](https://user-images.githubusercontent.com/52308072/187067776-8bce03a2-d01d-4d71-a064-695fe0fa468f.gif)
 
