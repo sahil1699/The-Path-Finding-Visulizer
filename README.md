@@ -13,7 +13,7 @@ There are 2 nodes starting node (pink ) and ending node(green) you can darg  the
 #### Drawing the obstacles.
 You can drag on empty grid to draw the obstacles between the 2 nodes. 
 
-![draw](https://user-images.githubusercontent.com/52308072/88751499-56735800-d175-11ea-9f24-b90e0397fef1.gif)
+https://user-images.githubusercontent.com/52308072/187064640-b2646cae-8686-4c4a-8031-a4465e164715.mp4
 
 #### Visualizing the Breath First Search.
 Press Visulize BFS Button to start bfs.
@@ -46,12 +46,12 @@ pip install pygame
 ```
 Then clone this repository.
 ```
-git clone https://github.com/sahil1699/PathFindingVisualizer.git
+git clone https://github.com/sahil1699/The-Path-Finding-Visulizer.git
 ```
 
 ## start Project
 In your terminal move to the directory where you have cloned this project.
 And then type :
 ```
-python ThePathFindingVisulizer.py
+python main.py
 ```
