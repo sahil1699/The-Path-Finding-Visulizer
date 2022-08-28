@@ -3,8 +3,7 @@
 It is Build in python pygame. Implemented Breath first search, A* Search and Depth First Search algorithm for finding path between 2 nodes.
 Have first look at it.. Described how to use this project below.
 
-![Path Finding Visulizer 28-08-2022 13_38_41](https://user-images.githubusercontent.com/52308072/187064418-25d12cbd-3173-42b0-adcc-b315152ac87a.png)
-
+![project](https://user-images.githubusercontent.com/52308072/187072734-fb0995ea-6af3-403d-9b41-4b40d5022e5f.PNG)
 
 ### Dragging the Nodes.
 There are 2 nodes starting node(green) and ending node(red) you can darg them to any position in the grid(graph).
@@ -16,11 +15,10 @@ You can drag on empty part of grid to draw the obstacles between the 2 nodes.
 
 ![DrawObstecls](https://user-images.githubusercontent.com/52308072/187067776-8bce03a2-d01d-4d71-a064-695fe0fa468f.gif)
 
-
 ## Visualizing the Breath First Search.
 Press Breath First Search Button to start bfs algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appears at bottom of screen
 
-![bfs](https://user-images.githubusercontent.com/52308072/187067818-1aa90971-bf1a-4518-9a43-5d8a14f52ec3.gif)
+![bfslatest](https://user-images.githubusercontent.com/52308072/187073176-7a02e06c-6fc2-44e6-8d05-b042397d9b54.gif)
 
 ## Visualizing the A* Search
 Press A* Search Button to start A* algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appears at bottom of screen
