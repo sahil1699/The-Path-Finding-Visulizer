@@ -6,9 +6,9 @@ It is Build in python pygame can be used for implementing path finding algorithm
 
 
 #### Dragging the Nodes.
-There are 2 nodes starting node (pink ) and ending node(green) you can darg  them to any position you want.
+There are 2 nodes starting node () and ending node(green) you can darg  them to any position you want.
 
-![drag](https://user-images.githubusercontent.com/52308072/88750873-1364b500-d174-11ea-9d7f-491745f643e8.gif)
+![movenodes](https://user-images.githubusercontent.com/52308072/187064920-46c04ca7-2800-4dc7-8c26-864787f5e194.gif)
 
 #### Drawing the obstacles.
 You can drag on empty grid to draw the obstacles between the 2 nodes. 
