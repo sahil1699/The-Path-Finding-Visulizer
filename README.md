@@ -1,7 +1,7 @@
 # The-Path-Finding-Visulizer
 
 It is Build in python pygame. Implemented Breath first search, A* Search and Depth First Search algorithm for finding path between 2 nodes.
-Have first look at it.. Described how to use it below.
+Have first look at it.. Described how to use this project below.
 
 ![Path Finding Visulizer 28-08-2022 13_38_41](https://user-images.githubusercontent.com/52308072/187064418-25d12cbd-3173-42b0-adcc-b315152ac87a.png)
 
@@ -18,18 +18,19 @@ You can drag on empty part grid to draw the obstacles between the 2 nodes.
 
 
 ## Visualizing the Breath First Search.
-Press Breath First Search Button to start bfs algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appers at bottom of screen
+Press Breath First Search Button to start bfs algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appears at bottom of screen
 
 ![bfs](https://user-images.githubusercontent.com/52308072/187067818-1aa90971-bf1a-4518-9a43-5d8a14f52ec3.gif)
 
-## Visualizing the Depth First Search
-
-![dfs](https://user-images.githubusercontent.com/52308072/187067968-c59ac1de-eab2-49dc-9751-9f4fe90c04ef.gif)
-
 ## Visualizing the A* Search
+Press A* Search Button to start A* algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appears at bottom of screen
 
 ![astart](https://user-images.githubusercontent.com/52308072/187068358-5025bb0a-5329-41d7-a27c-8ffd9b5f540e.gif)
 
+## Visualizing the Depth First Search
+Press Depth First Search Button to start DFS algorithm visulization. When algorithm starts instruction regarding nodes in algorithm appears at bottom of screen
+
+![dfs](https://user-images.githubusercontent.com/52308072/187067968-c59ac1de-eab2-49dc-9751-9f4fe90c04ef.gif)
 
 ### Drawing the maze
 You can get random maze of obstacles between the nodes. By clicking on Horizental Maze, Vartical Maze, and Random Maze.
