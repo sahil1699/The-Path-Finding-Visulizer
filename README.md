@@ -3,7 +3,7 @@
 It is Build in python pygame. Implemented Breath first search, A* Search and Depth First Search algorithm for finding path between 2 nodes.
 Have first look at it.. Described how to use this project below.
 
-![project](https://user-images.githubusercontent.com/52308072/187072734-fb0995ea-6af3-403d-9b41-4b40d5022e5f.PNG)
+![bfslatest](https://user-images.githubusercontent.com/52308072/187073176-7a02e06c-6fc2-44e6-8d05-b042397d9b54.gif)
 
 ### Dragging the Nodes.
 There are 2 nodes starting node(green) and ending node(red) you can darg them to any position in the grid(graph).
