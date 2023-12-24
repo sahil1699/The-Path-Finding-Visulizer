@@ -54,8 +54,6 @@ You have the option to change the speed of the visualization using the speed con
 
 ![Speed Control](https://user-images.githubusercontent.com/52308072/187068569-ecce4cb4-021b-4cca-9d17-c997b1da0cc4.png)
 
-This overview provides a basic understanding of The Path Finding Visualizer.
-
 ## Running the Project Locally
 
 To run this project on your PC, make sure you have at least Python 3.7.0 installed.
